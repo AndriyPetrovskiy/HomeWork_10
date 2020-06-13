@@ -1,0 +1,443 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* font-family: 'Kaushan Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.banner {
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    min-width: 320px;
+    min-height: 1000px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom, left top,
+        from(rgba(251, 227, 137, 0.75)),
+        to(rgba(243, 138, 129, 0.95))
+      ),
+      url('./img/bg.png');
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(251, 227, 137, 0.75),
+        rgba(243, 138, 129, 0.95)
+      ),
+      url('./img/bg.png');
+    background-image: linear-gradient(
+        0deg,
+        rgba(251, 227, 137, 0.75),
+        rgba(243, 138, 129, 0.95)
+      ),
+      url('./img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-resolution: 2dppx) {
+    .banner {
+      background-image: -webkit-gradient(
+          linear,
+          left bottom, left top,
+          from(rgba(251, 227, 137, 0.75)),
+          to(rgba(243, 138, 129, 0.95))
+        ),
+        url('../img/bg@2x.png');
+      background-image: -o-linear-gradient(
+          bottom,
+          rgba(251, 227, 137, 0.75),
+          rgba(243, 138, 129, 0.95)
+        ),
+        url('../img/bg@2x.png');
+      background-image: linear-gradient(
+          0deg,
+          rgba(251, 227, 137, 0.75),
+          rgba(243, 138, 129, 0.95)
+        ),
+        url('../img/bg@2x.png');
+    }
+  }
+
+/* =========== HEADER =============== */
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 0;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav__item {
+  margin-right: 55px;
+}
+
+.header-nav__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav-site__icon {
+  fill: #fff;
+  width: 20px;
+  height: 15px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav-site__icon:hover {
+  fill: #f3d772;
+}
+
+.header-nav__icon {
+  margin-right: 40px;
+}
+
+.header-nav__icon:last-child {
+  margin-right: 0;
+}
+
+.header-nav__link:hover {
+  color: #f3d772;
+  font-weight: bold;
+  border-bottom: 3px solid #f3d772;
+  padding-bottom: 5px;
+}
+
+/* =========== MAIN =============== */
+
+main {
+  margin-top: 175px;
+  font-size: 0;
+  color: #fff;
+}
+
+.main-sub-title {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 72px;
+  margin-bottom: 0;
+}
+
+.main-title {
+  margin-top: 40px;
+  margin-bottom: 125px;
+  font-size: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 140px;
+}
+
+.main-btn {
+  font-size: 14px;
+  font-weight: bold;
+  background: none;
+  border: 4px solid #fff;
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* =========== SERVICES =============== */
+
+.sub-title {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #f66868;
+  display: table;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.services-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* margin: 0; */
+  padding: 0;
+  margin-top: 60px;
+}
+
+.services-card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 340px;
+  padding: 10px 15px;
+  font-size: 0;
+  margin-bottom: 50px;
+}
+
+.services-card__icon {
+  height: 40px;
+  width: 40px;
+  fill: #90e2d3;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.services-card__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.services-card__sub-title {
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* =========== TEAM =============== */
+
+.team-description {
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.team-cards{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.team-card__fon {
+  background-color: #90e2d3;
+  width: 380px;
+  /* height: 470px; */
+  position: relative;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 470px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(rgba(251, 227, 137, 0.75)),
+    to(rgba(243, 138, 129, 0.95))
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(251, 227, 137, 0.75),
+    rgba(243, 138, 129, 0.95)
+  );
+  background-image: linear-gradient(
+    0deg,
+    rgba(251, 227, 137, 0.75),
+    rgba(243, 138, 129, 0.95)
+  );
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team-cards__social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.social_button-icon {
+  width: 30px;
+  height: 30px;
+  fill: #f66868;
+  background-color: #f3d772;
+  padding: 15px;
+  margin-left: 1px;
+}
+
+.social_button-icon:hover{
+  fill: #fff;
+  background-color: #f66868;
+}
+
+.team-card__fon:hover .overlay  {
+  opacity: 1;
+  top: -10px;
+  left: -10px;
+}
+
+.team-card__name {
+  font-size: 15px;
+  background-color: #fff;
+  padding-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.team-card__profesion {
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* =========== FOOTER =============== */
+
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #999;
+  font-size: 0;
+}
+
+.footer-info {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.footer-link {
+  color: #f66868;
+}
+
+
+input {
+  width: 230px;
+  border: 1px solid #e5e5e5;
+  margin: 0;
+
+}
+
+form{
+  font-size: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input{
+  padding-left: 10px;
+  color: #e5e5e5;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+  outline: none;
+}
+
+
+
+.btn_footer{
+  font-size: 13px;
+  padding: 10px;
+  width: 150px;
+  background-color: #95e1d3;
+  color: #fff;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  line-height: 1.2;
+}
